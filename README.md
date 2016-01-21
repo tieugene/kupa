@@ -1,0 +1,2 @@
+# kupa
+vkrecepts in django
