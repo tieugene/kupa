@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block jsready %}
+$("#tm_index").addClass("active");
+{% endblock %}
+{% block body_main %}
+<center>
+{% if user.is_authenticated %}
+<p>
+ TEST
+</p>
+{% else %}
+ <a href="{% url 'django.contrib.auth.views.login' %}?next={% url 'index' %}" rel="nofollow" class="nou"> <button type="button" alt="Вход" title="Вход" class="plain" style="padding: 5pt 10pt"> Вход </button> </a>
+{% endif %}
+</center>
+{% endblock %}

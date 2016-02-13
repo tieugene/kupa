@@ -22,8 +22,3 @@ TODO:
 	* client: sort.date
 	* record: add (from client_view and index)
 	Now: слева - клиент, справа - время, чуть ниже - длительность и описание. И педаль Создать
-
-HOWTO:
-	* on changing models:
-		./manage.py makemigrations medrec
-		./manage.py migrate
