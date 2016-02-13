@@ -7,7 +7,10 @@ For more information on this file, see
 https://docs.djangoproject.com/en/1.8/howto/deployment/wsgi/
 """
 
-import os
+import os, sys, locale
+
+locale.setlocale(locale.LC_TIME,'ru_RU.utf8')
+sys.path.append('/usr/share/kupa')
 
 from django.core.wsgi import get_wsgi_application
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings")
