@@ -49,7 +49,7 @@ WSGI_APPLICATION = 'wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join('/mnt/shares/tmp/kupa/media/kupa.db'),
+        'NAME': os.path.join('/mnt/shares/tmp/kupa/kupa.db'),
     }
 }
 
